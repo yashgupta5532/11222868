@@ -1,13 +1,14 @@
-import express from "express";
-import {
-  createShortUrl,
-  redirectToOriginalUrl,
-  getUrlStats,
-} from "../controllers/urlController.js";
+import express from 'express';
+import { 
+  createShortUrl, 
+  getUrlStats, 
+  getAllUrls 
+} from '../controllers/urlController.js';
+
 const router = express.Router();
 
-router.post("/shorturls", createShortUrl);
-router.get("/shorturls/:shortcode", getUrlStats);
-router.get("/:shortcode", redirectToOriginalUrl);
+router.post('/shorturls', createShortUrl);
+router.get('/shorturls/:shortcode', getUrlStats);
+router.get('/urls/stats', getAllUrls); 
 
 export default router;
