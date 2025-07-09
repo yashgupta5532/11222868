@@ -4,12 +4,13 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rupesh Kumar Gupta",
   "license": "ISC",
-  "description": "",
+  "description": "Backend for URL shortener application",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.1.0",
